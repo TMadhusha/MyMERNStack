@@ -23,3 +23,12 @@ export const getAllPlayers = async(req,res)=>{
         res.send(err)
     }
 }
+
+export const getPlayerById = async(req,res)=>{
+    try{
+        const player=await Player.findById(erq.params.PlayerId)
+        res.json(player)
+    }catch(err){
+        res.send(err)
+    }
+}
