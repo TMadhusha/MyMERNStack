@@ -32,3 +32,16 @@ export const getPlayerById = async(req,res)=>{
         res.send(err)
     }
 }
+
+export const updatePlayer = async (req,res)=>{
+    try{
+        const player= await Player.findOneAndUpdate(
+            {
+                
+            }
+        )
+
+    }catch(err){
+        res.send(err)
+    }
+}
